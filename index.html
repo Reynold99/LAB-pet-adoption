@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body> 
+    <button type="button" class="btn btn-primary" id="dogBtn" >Dog</button>
+    <button type="button" class="btn btn-success" id="catBtn">Cat</button>
+    <button type="button" class="btn btn-warning" id="dinoBtn">Dino</button>
+    <button type="button" class="btn btn-secondary" id="showBtn">Show All</button>
+    <div class="container">
+        <h1>Pet Adoption</h1>
+        <div class="pet-list">
+            <!-- Pet cards will be added here -->
+        </div>
+    </div>
+    <div id="forms">
+        <!-- Submit Pet -->
+        <h5>Submit Pet</h5>
+        <form id="addPetForm">
+            <div class="form-floating mb-3">
+                <input type="text" id="name" placeholder="Pet Name" required>
+                <label for="name">Pet Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="url" id="image" placeholder="Image URL" required>
+                <label for="image">Image</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" id="petColor" placeholder="Color of Pet" required>
+                <label for="color">Pet Color</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" id="specialSkill" placeholder="Pet Skill" required>
+                <label for="specialSkill">Pet Special Skill</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" id="type" placeholder="Type of Pet" required>
+                <label for="type">Pet Type</label>
+            </div>
+            <!-- SUBMIT BUTTON -->
+            <button type="submit" class="btn btn-success" id="form-submit">Add Pet</button>
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
